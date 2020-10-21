@@ -10,4 +10,22 @@ Palindroma: scrivere una funzione per valutare se una parola è palindroma oppur
 
 // INVERTO GLI ARRAY (ogni singola lettera è un array ora)  A  L  O  R  A  P
 
+// RIFACCIO TORNARE GLI ARRAI IN STRINGA
+
 // CONFRONTO SE è UGUALE A PRIMA (PALINDROMA) O è DIVERSA
+
+
+function palindrome(word) {
+
+    var reversedWord  = word.split('').reverse().join('');
+
+    if (word === reversedWord) {
+        return true;
+    } else {
+        return false;
+    }
+
+    // return text === reversedText;
+}
+
+console.log(palindrome('anna'));
