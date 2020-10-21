@@ -27,7 +27,7 @@ if (palindrome(asking_word)) {  /*sarebbe come scrivere if (palindrome(asking_wo
 
 function palindrome(word) {
 
-    var reversedWord  = word.toLowerCase().split('').reverse().join('');
+    var reversedWord = word.toLowerCase().split('').reverse().join('');
 
     if (word == reversedWord) {
         return true;
