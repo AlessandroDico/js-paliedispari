@@ -14,18 +14,25 @@ Palindroma: scrivere una funzione per valutare se una parola è palindroma oppur
 
 // CONFRONTO SE è UGUALE A PRIMA (PALINDROMA) O è DIVERSA
 
+// DOPO AVER FATTO LA FUNZIONE AGGIUNGO UN PROMPT PER DARE LA POSSIBILITA' ALL'UTENTE DI DARE IN INPUT UNA PAROLA E VEDERE SE E' PALINDROMA O MENO
+
+var asking_word = prompt('inserisci una parola').toLowerCase();
+console.log(asking_word);
+
+if (palindrome(asking_word)) {  /*sarebbe come scrivere if (palindrome(asking_word) == true)*/
+    console.log('è palindroma');
+} else {
+    console.log('non è palindroma');
+}
 
 function palindrome(word) {
 
-    var reversedWord  = word.split('').reverse().join('');
+    var reversedWord  = word.toLowerCase().split('').reverse().join('');
 
-    if (word === reversedWord) {
+    if (word == reversedWord) {
         return true;
     } else {
         return false;
     }
 
-    // return text === reversedText;
 }
-
-console.log(palindrome('anna'));
