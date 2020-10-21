@@ -15,12 +15,8 @@ console.log('il numero scelto da te è : ' + user_number);
 
 // L'UTENTE SCEGLIE PARI O DISPARI QUINDI SECONDO PROMPT
 
-// var even_odd = prompt('scegli pari o dispari');
-
 var even = false;
 var odd = false;
-
-
 
 do {
     var even_odd = prompt('scegli pari o dispari');
@@ -36,24 +32,28 @@ do {
 
 } while ((even != true) && (odd != true));
 
+// SE EVEN == TRUE è PARI ALTRIMENTI è PER FORZA DISPARI DATO CHE è USCITO DAL CICLO E QUINDI HA SCELTO O PARI O DISPARI
+
 if (even == true) {
     console.log('hai scelto pari');
 } else {
     console.log('hai scelto dispari');
 }
 
-// IN COMPUTER GENERA UN NUMERO CASUALE TRA 1 E 5 QUINDI MATH RANDOM
+// IL COMPUTER GENERA UN NUMERO CASUALE TRA 1 E 5 QUINDI MATH RANDOM (LEGATO ALLA FUNZIONE A FINE PAGINA)
 
 
 var cpu_number = getRandomNumbers();
 console.log('il nostro numero è : ' + cpu_number);
-// SOMMARE NUMERO UTENTE CON NUMERO PC
 
 
+// SOMMARE NUMERO UTENTE CON NUMERO PC(LEGATO ALLA FUNZIONE A FINE PAGINA)
 
 var final_sum = sumNumbers(user_number, cpu_number);
 console.log(final_sum);
-// CAPIRE SE LA SOMMA è PARI O DISPARI
+
+
+// CAPIRE SE LA SOMMA è PARI O DISPARI CON MODULO
 
 // DECRETARE IL VINCITORE
 
