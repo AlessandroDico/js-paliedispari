@@ -21,26 +21,26 @@ var even = false;
 var odd = false;
 
 
-//
-// do {
-//     var even_odd = prompt('scegli pari o dispari');
-//     if (even_odd == 'pari') {
-//         even = true;
-//         console.log(even);
-//     } else if (even_odd == 'dispari') {
-//         odd = true;
-//         console.log(odd);
-//     } else {
-//         alert('inserisci un valore valido');
-//     }
-//
-// } while ((even != true) || (odd != true));
 
+do {
+    var even_odd = prompt('scegli pari o dispari');
+    if (even_odd == 'pari') {
+        even = true;
+        // console.log(even);
+    } else if (even_odd == 'dispari') {
+        odd = true;
+        // console.log(odd);
+    } else {
+        alert('inserisci un valore valido');
+    }
 
+} while ((even != true) && (odd != true));
 
-
-
-
+if (even == true) {
+    console.log('hai scelto pari');
+} else {
+    console.log('hai scelto dispari');
+}
 
 // IN COMPUTER GENERA UN NUMERO CASUALE TRA 1 E 5 QUINDI MATH RANDOM
 
@@ -55,13 +55,25 @@ var final_sum = sumNumbers(user_number, cpu_number);
 console.log(final_sum);
 // CAPIRE SE LA SOMMA è PARI O DISPARI
 
+// DECRETARE IL VINCITORE
+
+
 if (final_sum %2 == 0) {
     console.log('il numero è pari');
+    if (even == true) {
+        console.log('Hai vinto');
+    } else {
+        console.log('Hai perso');
+    }
 } else {
     console.log('il numero è dispari');
+    if (odd == true) {
+        console.log('hai vinto');
+    } else {
+        console.log('Hai perso');
+    }
 }
 
-// DECRETARE IL VINCITORE
 
 
 // METTO TUTTE LE FUNZIONI IN FONDO
