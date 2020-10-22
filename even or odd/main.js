@@ -10,7 +10,7 @@ Pari o dispari: scrivere una (o più di una) funzione per simulare il gioco di p
 do {
     alert('inserisci un numero tra 1 e 5');
     var user_number = parseInt(prompt('numero'));
-} while ((user_number <= 0) || (user_number > 5));
+} while (isNaN(user_number) || user_number <= 0 || user_number > 5);
 console.log('il numero scelto da te è : ' + user_number);
 
 // L'UTENTE SCEGLIE PARI O DISPARI QUINDI SECONDO PROMPT
@@ -19,7 +19,7 @@ var even = false;
 var odd = false;
 
 do {
-    var even_odd = prompt('scegli pari o dispari');
+    var even_odd = prompt('scegli pari o dispari').toLowerCase();
     if (even_odd == 'pari') {
         even = true;
         // console.log(even);
